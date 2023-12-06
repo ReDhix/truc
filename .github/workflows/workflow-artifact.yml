@@ -1,0 +1,16 @@
+name: Tests Artifact
+on: push
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ""Mon application" > mon_app.txt
+    
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          ls
+          cat my_app.txt
+          
