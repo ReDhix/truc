@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ""Mon application" > mon_app.txt
+      - run: echo "Mon application" > mon_app.txt
     
   deploy:
     needs: build
